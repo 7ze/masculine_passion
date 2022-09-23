@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+<h1 class="title">{{ section.title }}</h1>
+<p>
+  Welcome to my blog. This is my very own
+  <i>unapologetic, brutally honest</i> writing space, where I write about things
+  that matter to me, among other things.
+</p>
+<ul>
+  {% for page in section.pages %}
+  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock content %}
