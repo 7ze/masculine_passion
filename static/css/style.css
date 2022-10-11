@@ -1,7 +1,7 @@
 @font-face {
   font-family: "lovers_quarrelregular";
   src: url("/fonts/lovers_quarrel-webfont.woff2") format("woff2"),
-    url("/fonts/lovers_quarrel-webfont.woff") format("woff");
+  url("/fonts/lovers_quarrel-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,14 +9,14 @@
 @font-face {
   font-family: "quaver_serifregular";
   src: url("/fonts/quaverserif-webfont.woff2") format("woff2"),
-    url("/fonts/quaverserif-webfont.woff") format("woff");
+  url("/fonts/quaverserif-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 html {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/images/dragon_warrior.png");
+  url("/images/dragon_warrior.png");
   background-position: 50% 30%;
 }
 
@@ -31,7 +31,6 @@ body {
 }
 
 main {
-  max-width: 500px;
   margin: 3rem auto;
 }
 
@@ -87,4 +86,12 @@ a:focus {
 hr {
   color: gray;
   margin-top: 1rem;
+}
+
+code {
+  font-size: 12px;
+}
+
+pre {
+  overflow: scroll;
 }
