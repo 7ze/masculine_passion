@@ -18,16 +18,18 @@ control and modify remote servers over the internet
 
 ## Setting up SSH keys
 
-Since SSH is encrypted, we are required to use a password or set up key pairs in
-order to use it. Although using passwords can seem convinient at first, they are
-no where as secure as key pairs when it comes to security. It is highly
+Since SSH is encrypted, we are required to use a password or set up key pairs
+in order to use it. Although using passwords can seem convinient at first, they
+are no where as secure as key pairs when it comes to security. It is highly
 recommended that you use key pairs to login to your SSH server or in this case
 your remote repository server.
 
-- Check if you already have an existing ssh key pair:
+I'm assuming you are on a unix machine like all sane developers.
+
+- First, check if you already have an existing ssh key pair:
 
     ```sh
-    ls ~/.ssh/id_rsa.pub
+    ls -l ~/.ssh/
     ```
 
     If a message appears in the console containing the text “No such file or
@@ -38,12 +40,13 @@ your remote repository server.
 - Generate an ssh key pair if you don't have one already, and follow with the rest of the process:
 
     ```sh
-    ssh-keygen -C <youremail>
+    ssh-keygen -C <email address>
     ```
 
-    The `C` flag is just to add a comment (in this case your mail-id) so that
-    you get to add a comment to help you remember the key. Although you can add
-    anything as a comment, it is generally a convention to add your mail-id as
+    The `C` flag is just to add a comment (in this case your email address or
+    hostname for that matter) so that you get to add a comment to help you
+    remember the key. Although you can add anything as a comment, it is
+    generally a convention to add either your your email address or hostname as
     your comment.
 
     You may additionally get prompted for a location to save your generated
@@ -70,11 +73,11 @@ command called cat to read the file to the console. (Note that the .pub file
 extension is important in this case.)
 
 ```sh
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_*.pub
 ```
 
-Highlight and copy the output, which starts with `ssh-rsa` and ends with your
-email address.
+Highlight and copy the output, which starts with `ssh-` and ends with your
+saved comment from earlier, which in this case should be your email address.
 
 Now, go back to GitHub in your browser window and paste the key you copied into
 the key field. Then, click `Add SSH key`. You’re done! You’ve successfully added
@@ -103,8 +106,8 @@ passphrases](https://docs.github.com/en/articles/working-with-ssh-key-passphrase
     ```
 
 - Verify the fingerprint in the message you see matches [GitHub's RSA public key
-fingerprint](https://docs.github.com/en/github/authenticating-to-github/githubs-ssh-key-fingerprints).
-If it does, then type `yes`:
+  fingerprint](https://docs.github.com/en/github/authenticating-to-github/githubs-ssh-key-fingerprints).
+  If it does, then type `yes`:
 
     ```custom
         > Hi username! You've successfully authenticated, but GitHub does not

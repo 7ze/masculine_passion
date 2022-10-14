@@ -55,7 +55,7 @@ nav a {
 a {
   color: #a883ba;
   text-decoration: none;
-  transition: 0.3s ease-in;
+  transition: 0.5s ease-in;
 }
 
 a:hover {
@@ -78,4 +78,6 @@ code {
 
 pre {
   overflow: scroll;
+  padding: 0.7rem;
+  border-radius: 7px;
 }
