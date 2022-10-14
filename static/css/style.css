@@ -10,7 +10,7 @@ body {
   max-width: 900px;
   margin: auto;
   padding: 2rem 3rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Linux Libertine", serif;
   font-size: 20px;
   line-height: 2rem;
 }
@@ -26,7 +26,6 @@ h4,
 h5,
 h6 {
   color: rgba(198, 198, 198, 0.8);
-  font-family: "Playfair Display", serif;
 }
 
 .title {
@@ -55,7 +54,6 @@ nav a {
 
 a {
   color: #a883ba;
-  font-family: "Playfair Display", serif;
   text-decoration: none;
   transition: 0.3s ease-in;
 }
