@@ -1,23 +1,8 @@
-@font-face {
-  font-family: "lovers_quarrelregular";
-  src: url("/fonts/lovers_quarrel-webfont.woff2") format("woff2"),
-  url("/fonts/lovers_quarrel-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "quaver_serifregular";
-  src: url("/fonts/quaverserif-webfont.woff2") format("woff2"),
-  url("/fonts/quaverserif-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
   url("/images/dragon_warrior.png");
-  background-position: 50% 30%;
+  background-position: 50% 90%;
+  background-attachment: fixed;
 }
 
 body {
@@ -25,7 +10,7 @@ body {
   max-width: 900px;
   margin: auto;
   padding: 2rem 3rem;
-  font-family: "Linux Libertine", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   line-height: 2rem;
 }
@@ -41,7 +26,7 @@ h4,
 h5,
 h6 {
   color: rgba(198, 198, 198, 0.8);
-  font-family: "Quaver Serif", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 .title {
@@ -59,7 +44,7 @@ footer {
 
 header h1 {
   color: rgba(203, 204, 255, 0.7);
-  font-family: "Lovers Quarrel";
+  font-family: "Italianno", cursive;
   font-size: 3.1rem;
   line-height: 3rem;
 }
@@ -70,6 +55,7 @@ nav a {
 
 a {
   color: #a883ba;
+  font-family: "Playfair Display", serif;
   text-decoration: none;
   transition: 0.3s ease-in;
 }
