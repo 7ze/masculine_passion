@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.93)),
   url("/images/dragon_warrior.png");
   background-position: 50% 90%;
   background-attachment: fixed;
@@ -80,4 +80,11 @@ pre {
   overflow: scroll;
   padding: 0.7rem;
   border-radius: 7px;
+}
+
+blockquote {
+  font-size: 22px;
+  width: 70%;
+  border-left: 1px solid skyblue;
+  padding-left: 20px;
 }
