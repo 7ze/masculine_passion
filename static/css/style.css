@@ -88,3 +88,9 @@ blockquote {
   border-left: 1px solid skyblue;
   padding-left: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  main img {
+    width: 75vw;
+  }
+}
