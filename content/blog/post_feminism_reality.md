@@ -60,8 +60,3 @@ saved by going to church and expecting men to believe that that makes them
 somehow cleanse of long list of men in her past. *God may forgive your
 degeneracy, but Men still know what you are, what you've done and more
 importantly, who you've done.*
-
-## Recommended Reading
-
-- [Single women are expected to grow +1.2% annually](https://www.morganstanley.com/ideas/womens-impact-on-the-economy)
-- [45% of women will be single & childless by 2030](https://www.bloomberg.com/news/articles/2022-08-31/women-not-having-kids-get-richer-than-men?leadSource=uverify%20wall)
